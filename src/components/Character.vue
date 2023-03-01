@@ -1,9 +1,8 @@
 <template>
     <v-col cols="12" sm="4">
-      <v-card class="mx-auto" max-width="344">
+      <v-card class="mx-auto" max-width="400">
         <v-img
           v-bind:src="character.image" v-bind:alt="character.name"
-          height="200px"
           cover
         ></v-img>
         <v-card-title>
@@ -16,9 +15,11 @@
           
           <!-- oafaousfhaosidahos -->
             <v-btn
-              color="primary"
+              block
+              variant="flat"
+              color="success"
               @click="($event) => showModal(character.id)">
-              Open Dialog
+              More
               <modal v-bind:dialog="dialog"
                 v-bind:currentCharacter="currentCharacter"/>
             </v-btn>
