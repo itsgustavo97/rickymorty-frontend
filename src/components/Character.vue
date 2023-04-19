@@ -19,7 +19,7 @@
               variant="flat"
               color="success"
               @click="($event) => showModal(character.id)">
-              More
+              Más detalles
               <modal v-bind:dialog="dialog"
                 v-bind:currentCharacter="currentCharacter"/>
             </v-btn>

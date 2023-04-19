@@ -13,7 +13,7 @@
         <v-text-field clearable label="Buscar" v-model="search" v-on:keyup.enter="searchCharacter"
           append-inner-icon="mdi-magnify"></v-text-field>
 
-        <v-btn variant="text" icon="mdi-filter"></v-btn>
+        <v-btn variant="text" icon="mdi-filter" v-model="search" @click="searchCharacter"></v-btn>
 
         <v-btn variant="text" icon="mdi-dots-vertical"></v-btn>
       </v-app-bar>
